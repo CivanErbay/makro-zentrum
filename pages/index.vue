@@ -7,8 +7,13 @@
     </div>
     <!--     <div class="news"><p>Aktuelles</p></div> -->
     <div class="contact">
-      <p>Telefonnummer: 0221 / 6802522</p>
-      <p>Öffnungszeiten:</p>
+      <p>Telefonnummern: 015734680075 / 015750716348</p>
+      <p>
+        Öffnungszeiten: <br />
+        Freitag 12:00 - 19:00 <br />
+        Samstag 11:00 - 14:00 <br />
+        und nach Absprache
+      </p>
       <p>Email: makrobiotik-zentrum@gmx.de</p>
     </div>
     <NuxtLink class="impressum_link" to="/impressum"
@@ -72,26 +77,18 @@ export default {
   font-size: 1em;
 }
 
-/* Media query for screens 600px and smaller */
-@media only screen and (min-width: 600px) {
-  .headline {
-    font-size: 4em;
-  }
-}
-
 /* Media query for screens 768px and smaller */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .headline {
-    font-size: 5em;
+    font-size: 3em;
+  }
+
+  .contact {
+    bottom: 45px;
   }
 }
 
 /* Media query for screens 1024px and smaller */
-@media only screen and (min-width: 1024px) {
-  .headline {
-    font-size: 8em;
-  }
-}
 
 .subheadline {
   font-size: 1.8em;
